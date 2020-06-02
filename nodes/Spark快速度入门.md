@@ -16,11 +16,11 @@
 
 1、创建 IDEA 工程
 
-![spark-1-06](E:\BigData-Spark\picture\spark-1-06.png)
+![spark-1-06](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-06.png)
 
 2、增加 Scala 支持
 
-![spark-1-07](E:\BigData-Spark\picture\spark-1-07.png)
+![spark-1-07](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-07.png)
 
 
 
@@ -81,7 +81,7 @@
 
 流程分析：
 
-![spark-1-08](E:\BigData-Spark\picture\spark-1-08.png)
+![spark-1-08](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-08.png)
 
 **创建目录 `src/main/scala`** 
 
@@ -181,12 +181,12 @@ log4j.logger.org.apache.hadoop.hive.ql.exec.FunctionRegistry=ERROR
 
 1、如果本机操作系统是Windows，在程序中使用了Hadoop相关的东西，比如写入文件到HDFS，则会遇到如下异常：
 
-![spark-1-02](E:\BigData-Spark\picture\spark-1-02.png)
+![spark-1-02](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-02.png)
 
 2、出现这个问题的原因，并不是程序的错误，而是windows系统用到了hadoop相关的服务，解决办法是通过配置关联到windows的系统依赖就可以了：
 
-![spark-1-03](E:\BigData-Spark\picture\spark-1-03.png)
+![spark-1-03](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-03.png)
 
-3、在IDEA中配置Run Configuration，添加HADOOP_HOME变量![spark-1-04](E:\BigData-Spark\picture\spark-1-04.png)
+3、在IDEA中配置Run Configuration，添加HADOOP_HOME变量![spark-1-04](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-04.png)
 
 ![spark-1-05](E:\BigData-Spark\picture\spark-1-05.png)
