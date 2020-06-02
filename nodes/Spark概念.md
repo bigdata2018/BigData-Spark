@@ -2,8 +2,12 @@
 <nav>
 <a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%B8%80%E7%AE%80%E4%BB%8B">一、简介</a><br/>
 <a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%BA%8C%E7%89%B9%E7%82%B9">二、特点</a><br/>
-  <a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%B8%89spark%E7%BB%84%E4%BB%B6">三、Spark组件</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%B8%89spark%E7%BB%84%E4%BB%B6">三、Spark组件</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%B8%89spark%E7%BB%84%E4%BB%B6">四、Spark和Hadoop的异同</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E6%A6%82%E5%BF%B5.md#%E4%B8%89spark%E7%BB%84%E4%BB%B6">五、Spark开发语言对比</a><br/>
 </nav>
+
+
 
 
 
@@ -114,3 +118,33 @@ df.where("age > 21")
 #### GraphX
 
 GraphX 是分布式图计算框架, 提供了一组可以表达图计算的 API, GraphX 还对这种抽象化提供了优化运行
+
+
+
+##  四、Spark和Hadoop的异同
+
+|            | Hadoop                         | Spark                        |
+| ---------- | ------------------------------ | ---------------------------- |
+| **类型**   | 基础平台, 包含计算, 存储, 调度 | 分布式计算工具               |
+| **场景**   | 大规模数据集上的批处理         | 迭代计算, 交互式计算, 流计算 |
+| **延迟**   | 大                             | 小                           |
+| **易用性** | API 较为底层, 算法适应性差     | API 较为顶层, 方便使用       |
+| **价格**   | 对机器要求低, 便宜             | 对内存有要求, 相对较贵       |
+
+
+
+## 五、Spark开发语言对比
+
+![spark-1-09](E:\BigData-Spark\picture\spark-1-09.png)
+
+现在我们对每个语言的优缺点进行详细的分析：
+
+- Scala 作为 Spark 的开发语言当然得到了原生支持，也非常成熟，它简洁的语法也能显著提高开发效率；
+
+- Java 也是 Spark 原生支持的开发语言，但是 Java 语法冗长且不支持函数式编程（1.8 以后支持），导致它的 API 设计得冗余且不合理，再加上需要编译执行，Java 开发效率无疑是最低的，但 Java 程序员基数特别大，Java API 对于这些用户来说无疑很友好；
+
+- Python 与 R 语言都是解释型脚本语言，不用编译直接运行，尤其是 Python 更以简洁著称，开发效率自不必说，此外 Python 与 R 语言本身也支持函数式编程，这两种语言在开发 Spark 作业时也是非常自然，但由于其执行原理是计算任务在每个节点安装的 Python 或 R 的环境中执行，结果通过管道输出给 Spark执行者，所以效率要比 Scala 与 Java 低；
+
+- SQL 是 Spark 原生支持的开发语言，从各个维度上来说都是最优的，所以一般情况下，用 Spark SQL 解决问题是最优选择。
+
+如果你才刚开始学习 Spark，那么一开始最好选择一门自己最熟悉的语言，这样 Spark 的学习曲线会比较平缓。如果从零开始，建议在 Scala 与 Python 中间选择，**Scala 作为 Spark 的原生开发语言，如果想要深入了解 Spark 有必要掌握。**
