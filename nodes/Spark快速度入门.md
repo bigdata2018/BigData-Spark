@@ -1,10 +1,10 @@
 # Spark快速度入门
 
 <nav>
-<a href="#一作业提交">一、增加Scala插件</a><br/>
-<a href="#二Local模式">二、增加依赖关系</a><br/>
-<a href="#三Standalone模式">三、WordCount案例</a><br/>
-<a href="#三Spark-on-Yarn模式">四、异常处理</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E5%BF%AB%E9%80%9F%E5%BA%A6%E5%85%A5%E9%97%A8.md#%E4%B8%80%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B">一、增加Scala插件</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E5%BF%AB%E9%80%9F%E5%BA%A6%E5%85%A5%E9%97%A8.md#%E4%BA%8C%E5%A2%9E%E5%8A%A0%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB">二、增加依赖关系</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E5%BF%AB%E9%80%9F%E5%BA%A6%E5%85%A5%E9%97%A8.md#%E4%B8%89wordcount%E6%A1%88%E4%BE%8B">三、WordCount案例</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Spark/blob/master/nodes/Spark%E5%BF%AB%E9%80%9F%E5%BA%A6%E5%85%A5%E9%97%A8.md#%E5%9B%9B%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86">四、异常处理</a><br/>
 </nav>
 
 
