@@ -189,4 +189,4 @@ log4j.logger.org.apache.hadoop.hive.ql.exec.FunctionRegistry=ERROR
 
 3、在IDEA中配置Run Configuration，添加HADOOP_HOME变量![spark-1-04](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-04.png)
 
-![spark-1-05](E:\BigData-Spark\picture\spark-1-05.png)
+![spark-1-05](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-05.png)
