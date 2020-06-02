@@ -12,7 +12,7 @@
 
 Spark作为一个数据处理框架和计算引擎，被设计在所有常见的集群环境中运行, 在国内工作中主流的环境为Yarn，不过逐渐容器式环境也慢慢流行起来。接下来，我们就分别看看不同环境下Spark的运行
 
-![spark-3-01](E:\BigData-Spark\picture\spark-3-01.png)
+![spark-3-01](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-01.png)
 
 
 
@@ -40,7 +40,7 @@ SPARK_DIST_CLASSPATH=$(/opt/module/hadoop-3.1.3/bin/hadoop classpath)
 
 （2）方式二（建议）：除了修改配置文件外，也可以直接引入对应的Jar包
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-09.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-09.png)
 
 **2、启动Local环境**
 
@@ -50,7 +50,7 @@ SPARK_DIST_CLASSPATH=$(/opt/module/hadoop-3.1.3/bin/hadoop classpath)
 [atguigu@hadoop102 spark-local]$ bin/spark-shell --master local[*]
 ```
 
-![spark-3-02](E:\BigData-Spark\picture\spark-3-02.png)
+![spark-3-02](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-02.png)
 
 （2）启动成功后，可以输入网址进行Web UI监控页面访问
 
@@ -58,7 +58,7 @@ SPARK_DIST_CLASSPATH=$(/opt/module/hadoop-3.1.3/bin/hadoop classpath)
 http://虚拟机地址:4040
 ```
 
-![spark-3-03](E:\BigData-Spark\picture\spark-3-03.png)
+![spark-3-03](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-03.png)
 
 **3、命令行工具**
 
@@ -111,7 +111,7 @@ bin/spark-submit \
 
 3)    spark-examples_2.12-2.4.5.jar 运行的应用类所在的jar包
 
-4)    数字10表示程序的入口参数，用于设定当前应用的任务数量![spark-3-04](E:\BigData-Spark\picture\spark-3-04.png)
+4)    数字10表示程序的入口参数，用于设定当前应用的任务数量![spark-3-04](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-04.png)
 
 
 
@@ -147,7 +147,7 @@ SPARK_DIST_CLASSPATH=$(/opt/module/hadoop-3.1.3/bin/hadoop classpath)
 
 （2）方式二（建议）：除了修改配置文件外，也可以直接引入对应的Jar包
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-09.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-09.png)
 
 **2、修改配置文件**
 
@@ -220,7 +220,7 @@ sbin/start-all.sh
 
 （3）查看Master资源监控Web UI界面: http://hadoop102:8080/
 
-![spark-3-05](E:\BigData-Spark\picture\spark-3-05.png)
+![spark-3-05](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-05.png)
 
 ```
 8080端口=>资源监控页面--Master
@@ -243,13 +243,13 @@ bin/spark-submit \
 
 3)    spark-examples_2.12-2.4.5.jar 运行类所在的jar包
 
-4)    数字10表示程序的入口参数，用于设定当前应用的任务数量![spark-3-06](E:\BigData-Spark\picture\spark-3-06.png)
+4)    数字10表示程序的入口参数，用于设定当前应用的任务数量![spark-3-06](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-06.png)
 
 执行任务时，会产生多个Java进程
 
-![spark-3-07](E:\BigData-Spark\picture\spark-3-07.png)
+![spark-3-07](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-07.png)
 
-执行任务时，默认采用服务器集群节点的总核数，每个节点内存1024M。![spark-3-08](E:\BigData-Spark\picture\spark-3-08.png)
+执行任务时，默认采用服务器集群节点的总核数，每个节点内存1024M。![spark-3-08](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-08.png)
 
 **5、提交参数说明**
 
@@ -339,7 +339,7 @@ bin/spark-submit \
 
 （7）查看历史服务：http://hadoop102:18080/
 
-![spark-3-11](E:\BigData-Spark\picture\spark-3-11.png)
+![spark-3-11](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-11.png)
 
 **7、配置高可用（HA）**
 
@@ -419,7 +419,7 @@ sbin/start-all.sh
 
 （6）查看web页面：hadoop102:8989
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-21.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-21.png)
 
 （7）启动hadoop102的单独Master节点，此时hadoop102节点Master状态处于备用状态
 
@@ -429,7 +429,7 @@ sbin/start-all.sh
 
 （8）查看web页面：hadoop103:8989
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-22.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-22.png)
 
 （9）提交应用到高可用集群
 
@@ -444,11 +444,11 @@ bin/spark-submit \
 
 （10）停止hadoop102的Master资源监控进程
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-23.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-23.png)
 
 （11）查看hadoop103的Master 资源监控Web UI，稍等一段时间后hadoop103节点的Master状态提升为活动状态
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-24.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-24.png)
 
 
 
@@ -478,7 +478,7 @@ SPARK_DIST_CLASSPATH=$(/opt/module/hadoop-3.1.3/bin/hadoop classpath)
 
 （2）方式二（建议）：除了修改配置文件外，也可以直接引入对应的Jar包
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-09.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-09.png)
 
 **2、修改配置文件**
 
@@ -543,11 +543,11 @@ Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.n
 
 最后显示结果为
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-12.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-12.png)
 
 查看http://192.168.117.103:8088/页面，点击History，查看历史页面
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-13.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-13.png)
 
 **5、配置历史服务器**
 
@@ -612,15 +612,15 @@ bin/spark-submit \
 10
 ```
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-14.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-14.png)
 
 （7）Web页面查看日志：http://hadoop102:18080/
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-15.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-15.png)
 
  Web页面查看日志：http://hadoop103:8088
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-16.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-16.png)
 
 
 
@@ -632,17 +632,17 @@ bin/spark-submit \
 
 将文件spark-2.4.5-bin-without-hadoop-scala-2.12.tgz解压缩到无中文无空格的路径中，将hadoop3依赖jar包拷贝到jars目录中。
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-17.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-17.png)
 
 引入jar包
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-09.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-09.png)
 
 **2、启动本地环境**
 
 （1）执行解压缩文件路径下bin目录中的spark-shell.cmd文件，启动Spark本地环境
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-18.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-18.png)
 
 （2）  在bin目录中创建input目录，并添加word.txt文件, 在命令行中输入脚本代码
 
@@ -650,7 +650,7 @@ bin/spark-submit \
 sc.textFile("input/word.txt").flatMap(_.split(",")).map((_,1)).reduceByKey(_+_).collect
 ```
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-19.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-19.png)
 
 **3、命令行提交应用**
 
@@ -660,5 +660,5 @@ sc.textFile("input/word.txt").flatMap(_.split(",")).map((_,1)).reduceByKey(_+_).
 spark-submit --class org.apache.spark.examples.SparkPi --master local[2] ../examples/jars/spark-examples_2.12-2.4.5.jar 10
 ```
 
-![spark-3-09](E:\BigData-Spark\picture\spark-3-20.png)
+![spark-3-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-3-20.png)
 
