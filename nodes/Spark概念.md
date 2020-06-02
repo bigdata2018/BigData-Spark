@@ -135,7 +135,7 @@ GraphX 是分布式图计算框架, 提供了一组可以表达图计算的 API,
 
 ## 五、Spark开发语言对比
 
-![spark-1-09](E:\BigData-Spark\picture\spark-1-09.png)
+![spark-1-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-1-09.png)
 
 现在我们对每个语言的优缺点进行详细的分析：
 
