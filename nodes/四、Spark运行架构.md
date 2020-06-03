@@ -17,7 +17,7 @@
 
 Spark框架的核心是一个计算引擎，整体来说，它采用了标准 master-slave 的结构。如下图所示，它展示了一个 Spark执行时的基本结构。图形中的Driver表示master，负责管理整个集群中的作业任务调度。图形中的Executor 则是 slave，负责实际执行任务。
 
-![spark-4-01](E:\BigData-Spark\picture\spark-4-01.png)
+![spark-4-01](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-4-01.png)
 
 
 
@@ -85,7 +85,7 @@ Spark Executor是集群中运行在工作节点（Worker）中的一个JVM进程
 
 **3、有向无环图（DAG）**
 
-![spark-4-01](E:\BigData-Spark\picture\spark-4-02.png)
+![spark-4-01](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-4-02.png)
 
 大数据计算引擎框架我们根据使用方式的不同一般会分为四类，其中第一类就是Hadoop所承载的MapReduce,它将计算分为两个阶段，分别为 Map阶段 和 Reduce阶段。对于上层应用来说，就不得不想方设法去拆分算法，甚至于不得不在上层应用实现多个 Job 的串联，以完成一个完整的算法，例如迭代计算。 由于这样的弊端，催生了支持 DAG 框架的产生。因此，支持 DAG 的框架被划分为第二代计算引擎。如 Tez 以及更上层的 Oozie。这里我们不去细究各种 DAG 实现之间的区别，不过对于当时的 Tez 和 Oozie 来说，大多还是批处理的任务。接下来就是以 Spark 为代表的第三代的计算引擎。第三代计算引擎的特点主要是 Job 内部的 DAG 支持（不跨越 Job），以及实时计算。
 
@@ -99,7 +99,7 @@ DAG（Directed Acyclic Graph）有向无环图是由点和线组成的拓扑图�
 
 所谓的提交流程，其实就是我们开发人员根据需求写的应用程序通过Spark客户端提交给Spark运行环境执行计算的流程。在不同的部署环境中，这个提交过程基本相同，但是又有细微的区别，我们这里不进行详细的比较，但是因为国内工作中，将Spark引用部署到Yarn环境中会更多一些，所以本课程中的提交流程是基于Yarn环境的。
 
-![spark-4-01](E:\BigData-Spark\picture\spark-4-03.png)
+![spark-4-01](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-4-03.png)
 
 Spark应用程序提交到Yarn环境中执行的时候，一般会有两种部署执行的方式：Client和Cluster。两种模式，主要区别在于：Driver程序的运行节点。
 
