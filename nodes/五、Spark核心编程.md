@@ -71,13 +71,13 @@ RDD特点
 
 #### **2、核心属性**
 
-![spark-5-01](E:\BigData-Spark\picture\spark-5-01.png)
+![spark-5-01](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-01.png)
 
 （1）分区列表
 
-![spark-5-02](E:\BigData-Spark\picture\spark-5-02.png)
+![spark-5-02](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-02.png)
 
-![spark-5-02](E:\BigData-Spark\picture\spark-5-11.png)
+![spark-5-02](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-11.png)
 
 ```
 例如上图中, 使用了一个 RDD 表示 HDFS 上的某一个文件, 这个文件在 HDFS 中是分三块, 那么 RDD 在读取的时候就也有三个分区, 每个 RDD 的分区对应了一个 HDFS 的分块
@@ -89,7 +89,7 @@ RDD特点
 
 Spark在计算时，是使用分区函数对每一个分区进行计算
 
-![spark-5-03](E:\BigData-Spark\picture\spark-5-03.png)
+![spark-5-03](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-03.png)
 
 ```
 RDD 是弹性分布式数据集
@@ -100,19 +100,19 @@ RDD 一个非常重要的前提和基础是 RDD 运行在分布式环境下, 其
 
 RDD是计算模型的封装，当需求中需要将多个计算模型进行组合时，就需要将多个RDD建立依赖关系
 
-![spark-5-04](E:\BigData-Spark\picture\spark-5-04.png)
+![spark-5-04](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-04.png)
 
 （4）分区器（可选）
 
 当数据为KV类型数据时，可以通过设定分区器自定义数据的分区
 
-![spark-5-05](E:\BigData-Spark\picture\spark-5-05.png)
+![spark-5-05](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-05.png)
 
 （5）首选位置（可选）
 
 计算数据时，可以根据计算节点的状态选择不同的节点位置进行计算
 
-![spark-5-06](E:\BigData-Spark\picture\spark-5-06.png)
+![spark-5-06](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-06.png)
 
 
 
@@ -126,19 +126,19 @@ RDD是Spark框架中用于数据处理的核心模型，接下来我们看看，
 
 （1） 启动Yarn集群环境
 
-![spark-5-07](E:\BigData-Spark\picture\spark-5-07.png)
+![spark-5-07](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-07.png)
 
 （2）Spark通过申请资源创建调度节点和计算节点
 
-![spark-5-08](E:\BigData-Spark\picture\spark-5-08.png)
+![spark-5-08](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-08.png)
 
 （3）Spark框架根据需求将计算逻辑根据分区划分成不同的任务
 
-![spark-5-09](E:\BigData-Spark\picture\spark-5-09.png)
+![spark-5-09](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-09.png)
 
 （4）调度节点将任务根据计算节点状态发送到对应的计算节点进行计算
 
-![spark-5-10](E:\BigData-Spark\picture\spark-5-10.png)
+![spark-5-10](https://github.com/bigdata2018/BigData-Spark/blob/master/picture/spark-5-10.png)
 
 从以上流程可以看出RDD在整个流程中主要用于将逻辑进行封装，并生成Task发送给Executor节点执行计算，接下来我们就一起看看Spark框架中RDD是具体是如何进行数据处理的。
 
