@@ -3,10 +3,8 @@
 大数据Spark学习指南（2020） — — 持续更新完善中
 
 <nav>
-<a href="https://github.com/bigdata2018/BigData-installation/blob/master/README.md#%E4%B8%80linux%E5%9F%BA%E6%9C%AC%E5%AE%89%E8%A3%85">一、运行架构</a><br/>
-<a href="#二、Hadoop相关安装">二、核心组件</a><br/>
-<a href="#三、Spark相关安装">三、核心概念</a><br/>
-<a href="#四、提交流程">四、提交流程</a><br/>
+<a href="#二、Hadoop相关安装">一、RDD</a><br/>
+<a href="#三、Spark相关安装">二、RDD转换算子</a><br/>
 </nav>
 
 
